@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="50dp" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btAll"
+        android:layout_alignRight="@+id/btAll"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/itexportdata"
+        android:textSize="25sp"
+        android:textStyle="bold" 
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btAll"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/TextView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:textSize="15sp"
+        android:text="@string/btall" />
+
+    <Button
+        android:id="@+id/btSelected"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_alignLeft="@+id/btAll"
+        android:layout_below="@+id/btAll"
+        android:text="@string/btselected"
+        android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btBySelection"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:layout_alignLeft="@+id/btSelected"
+            android:layout_below="@+id/btSelected"
+            android:text="@string/btbyselection"
+            android:textSize="15sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btBySelection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp" />
+
+        <TextView
+            android:id="@+id/tvWait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/tvwait" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/itendtour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/itendtour"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/msgnotendtour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itendtour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/msgnotendtour"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/tvspots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/msgnotendtour"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/tvspots" /> 
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttons"
+        android:layout_below="@+id/tvspots"
+        android:isScrollContainer="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+        
+    <!-- Preview: listitem=@android:layout/simple_list_item_single_choice -->
+    </ListView>
+ 
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:background="@color/Cinza_25"
+        android:padding="5dp">
+ 
+    <Button
+        android:id="@+id/btjustify"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_width="fill_parent"
+        android:text="@string/btjustify" />
+
+    <Button
+        android:id="@+id/btcontinuetour"
+       	android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_width="fill_parent"
+        android:text="@string/btcontinuetour" />
+ 
+    </LinearLayout>
+    
+</RelativeLayout>

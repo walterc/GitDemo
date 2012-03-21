@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/ittourint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/itinterrupttour"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/adminsearchoptions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ittourint"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+        <TextView
+            android:id="@+id/tvtype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:paddingLeft="5dp"
+            android:text="@string/tvtype"
+            android:textAppearance="?android:attr/textAppearanceMedium" />        
+        <Spinner
+            android:id="@+id/sptype"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adminsearchoptions1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/adminsearchoptions"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+        
+        <TextView
+            android:id="@+id/tvcause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:paddingLeft="5dp"
+            android:text="@string/tvcause"
+            android:textAppearance="?android:attr/textAppearanceMedium" />        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adminsearchoptions3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/adminsearchoptions1"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <EditText
+            android:id="@+id/etcause"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>    
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Cinza_25"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+        <Button
+            android:id="@+id/btsave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/btsave" />
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/bthome" />
+
+    </LinearLayout>   
+    
+</RelativeLayout>

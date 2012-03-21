@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="50dp" >
+
+    <TextView
+        android:id="@+id/tvStorageType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/itsotragetype"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp" />
+
+    <RadioGroup
+        android:id="@+id/rgStorageType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/rbPhoneMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbphonememory" />
+
+        <RadioButton
+            android:id="@+id/rbMemCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rbmemcard" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btOk"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/btok"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_HSuDIFrvEeGA_Z32cmSwqg" name="model">
+  <packagedElement xmi:type="uml:Class" xmi:id="_QkphgFrvEeGA_Z32cmSwqg" name="Class0"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WGrY4FuuEeGP77OehsCadw" name="Logger">
+    <ownedAttribute xmi:id="_T_sBwFuvEeGP77OehsCadw" name="username" visibility="private" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_BvQh4FuwEeGP77OehsCadw" name="password" visibility="private" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedOperation xmi:id="_RAaXwFuwEeGP77OehsCadw" name="getUserName"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_31fncFuvEeGP77OehsCadw" name="int"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_97OPkFuvEeGP77OehsCadw" name="String"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9j6tYFuwEeGP77OehsCadw" name="Spot">
+    <ownedReception xmi:id="_7NGKgFuxEeGP77OehsCadw" name="Reception0"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_fZBmoFuxEeGP77OehsCadw" name="float"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vIuu0FuzEeGP77OehsCadw" name="Tours" clientDependency="_EEyOoGBtEeGR0YSNSuzdmA">
+    <generalization xmi:id="_o2x5sFvhEeGFoNSZuYccew" general="_jMHnUFu9EeGP77OehsCadw"/>
+    <generalization xmi:id="_qVQC0FvhEeGFoNSZuYccew" general="_cR2ZUFu8EeGP77OehsCadw"/>
+    <generalization xmi:id="_i39FoFvzEeGFoNSZuYccew" general="_jMHnUFu9EeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_wP-84FvWEeGadaQ3Sq1reQ" name="tourid" visibility="private" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_JO3NYFu4EeGP77OehsCadw" name="datetime" visibility="private" type="_YelJkGB-EeGR0YSNSuzdmA"/>
+    <ownedAttribute xmi:id="_B4IfUFvXEeGadaQ3Sq1reQ" name="note" visibility="private" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_IWRAYFvXEeGadaQ3Sq1reQ" name="spot" visibility="private" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <interfaceRealization xmi:id="_EEyOoGBtEeGR0YSNSuzdmA" name="InterfaceRealization0" supplier="_jMHnUFu9EeGP77OehsCadw" client="_vIuu0FuzEeGP77OehsCadw" contract="_jMHnUFu9EeGP77OehsCadw"/>
+    <ownedOperation xmi:id="_NNi4YFvXEeGadaQ3Sq1reQ" name="getIdTour">
+      <ownedParameter xmi:id="_EKovoFvmEeGFoNSZuYccew" type="_31fncFuvEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_HByxsVvgEeGFoNSZuYccew" name="getDateTime">
+      <ownedParameter xmi:id="_aiJy8FvgEeGFoNSZuYccew" type="_YelJkGB-EeGR0YSNSuzdmA" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wh_uYFvgEeGFoNSZuYccew" name="setDateTime">
+      <ownedParameter xmi:id="_3c5D8FvgEeGFoNSZuYccew" name="datetime" type="_YelJkGB-EeGR0YSNSuzdmA" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_8nUhcFvgEeGFoNSZuYccew" name="getNote">
+      <ownedParameter xmi:id="__qD5sFvgEeGFoNSZuYccew" type="_97OPkFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_RqdkEFvhEeGFoNSZuYccew" name="setNote">
+      <ownedParameter xmi:id="_XAM5sFvhEeGFoNSZuYccew" name="note" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bEZu8FvhEeGFoNSZuYccew" name="getSpot">
+      <ownedParameter xmi:id="_fnQPEFvhEeGFoNSZuYccew" type="_97OPkFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_s9j5wGB_EeGR0YSNSuzdmA" name="newTour"/>
+    <ownedOperation xmi:id="_uk1ZkGB_EeGR0YSNSuzdmA" name="saveTour">
+      <ownedParameter xmi:id="_VlgeUGC4EeGzKtM_IP53Zw" name="tour" type="_zs3v8GC3EeGzKtM_IP53Zw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_wjPnAGB_EeGR0YSNSuzdmA" name="interruptTour">
+      <ownedParameter xmi:id="_bMWyEGC4EeGzKtM_IP53Zw" name="tour" type="_zs3v8GC3EeGzKtM_IP53Zw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_y2Uc4GB_EeGR0YSNSuzdmA" name="endTour">
+      <ownedParameter xmi:id="_ekX2wGC4EeGzKtM_IP53Zw" name="tour" type="_zs3v8GC3EeGzKtM_IP53Zw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_B-CA4Fu0EeGP77OehsCadw" name="Users">
+    <generalization xmi:id="_ZbL88Fu2EeGP77OehsCadw" general="_VFjEUFu0EeGP77OehsCadw"/>
+    <generalization xmi:id="_5jULoGDHEeGzKtM_IP53Zw" general="_8O-WEGDGEeGzKtM_IP53Zw"/>
+    <generalization xmi:id="_jSj3oGDNEeGfdNEKnq0Naw" general="_9XUPcGDMEeGfdNEKnq0Naw"/>
+    <ownedAttribute xmi:id="_HdghUFu0EeGP77OehsCadw" name="username" visibility="private" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_M3Cx0Fu0EeGP77OehsCadw" name="userrole" visibility="private" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    <ownedOperation xmi:id="_s-b9UFu6EeGP77OehsCadw" name="getUserName">
+      <ownedParameter xmi:id="_laTAAFvGEeGadaQ3Sq1reQ" type="_31fncFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_v6uvUFu6EeGP77OehsCadw" name="setUserName">
+      <ownedParameter xmi:id="_rbP10FvGEeGadaQ3Sq1reQ" name="username" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0ETz0Fu6EeGP77OehsCadw" name="getUserRole">
+      <ownedParameter xmi:id="_0E6aUFvGEeGadaQ3Sq1reQ" type="_Y4wI0Fu3EeGP77OehsCadw" direction="return">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Ct58FvGEeGadaQ3Sq1reQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7CnzUFvGEeGadaQ3Sq1reQ" value="1"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2Nj_UFu6EeGP77OehsCadw" name="setUserRole">
+      <ownedParameter xmi:id="__kSnsFvGEeGadaQ3Sq1reQ" name="role" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9jBnoFvTEeGadaQ3Sq1reQ" name="login">
+      <ownedParameter xmi:id="_NUnREFvUEeGadaQ3Sq1reQ" type="_Y4wI0Fu3EeGP77OehsCadw" direction="return"/>
+      <ownedParameter xmi:id="_ffAk8FvUEeGadaQ3Sq1reQ" name="username" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_n8RFIFvUEeGadaQ3Sq1reQ" name="role" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_VFjEUFu0EeGP77OehsCadw" name="IUsers">
+    <generalization xmi:id="_klhj4Fu1EeGP77OehsCadw" general="_VFjEUFu0EeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_Z_9I0Fu0EeGP77OehsCadw" name="username" visibility="public" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_OLoe0Fu3EeGP77OehsCadw" name="userrole" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    <ownedOperation xmi:id="_LELB0Fu7EeGP77OehsCadw" name="getUserName">
+      <ownedParameter xmi:id="_QB24QVvFEeGadaQ3Sq1reQ" type="_31fncFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_MbTz4Fu7EeGP77OehsCadw" name="setUserName">
+      <ownedParameter xmi:id="_kIxjMFvFEeGadaQ3Sq1reQ" name="username" type="_31fncFuvEeGP77OehsCadw"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_N-Bj0Fu7EeGP77OehsCadw" name="getUserRole">
+      <ownedParameter xmi:id="_OpGgIFvGEeGadaQ3Sq1reQ" type="_Y4wI0Fu3EeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_PSBiUFu7EeGP77OehsCadw" name="setUserRole">
+      <ownedParameter xmi:id="_WZ1RgFvGEeGadaQ3Sq1reQ" name="role" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_Y4wI0Fu3EeGP77OehsCadw" name="boolean"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_OLd00Fu5EeGP77OehsCadw" name="Administrators">
+    <generalization xmi:id="_SEps4Fu5EeGP77OehsCadw" general="_VFjEUFu0EeGP77OehsCadw"/>
+    <generalization xmi:id="_cDe4EFu6EeGP77OehsCadw" general="_VFjEUFu0EeGP77OehsCadw"/>
+    <generalization xmi:id="_jYI_AGB8EeGR0YSNSuzdmA" general="_VFjEUFu0EeGP77OehsCadw"/>
+    <generalization xmi:id="_03YoAGDHEeGzKtM_IP53Zw" general="_8O-WEGDGEeGzKtM_IP53Zw"/>
+    <generalization xmi:id="_A-sJUGDOEeGfdNEKnq0Naw" general="_ubxnwGDNEeGfdNEKnq0Naw"/>
+    <generalization xmi:id="_J51fYGDOEeGfdNEKnq0Naw" general="_9XUPcGDMEeGfdNEKnq0Naw"/>
+    <ownedAttribute xmi:id="_velbUFu5EeGP77OehsCadw" name="username" visibility="private" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_pi-f4Fu2EeGP77OehsCadw" name="password" visibility="private" type="_97OPkFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_ApwG0Fu6EeGP77OehsCadw" name="userrole" visibility="private" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    <ownedOperation xmi:id="_37ReUFu6EeGP77OehsCadw" name="getUserName">
+      <ownedParameter xmi:id="_DWxa0FvHEeGadaQ3Sq1reQ" type="_31fncFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7c81UFu6EeGP77OehsCadw" name="setUserName">
+      <ownedParameter xmi:id="_LttQkFvHEeGadaQ3Sq1reQ" name="username" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ANrZYFu7EeGP77OehsCadw" name="getPassword">
+      <ownedParameter xmi:id="_bxlj4FvHEeGadaQ3Sq1reQ" type="_97OPkFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_D3NE0Fu7EeGP77OehsCadw" name="setPassword">
+      <ownedParameter xmi:id="_iqq7kFvHEeGadaQ3Sq1reQ" name="pass" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_FhGa0Fu7EeGP77OehsCadw" name="getUserRole">
+      <ownedParameter xmi:id="_wU4o0FvHEeGadaQ3Sq1reQ" type="_Y4wI0Fu3EeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_G5me0Fu7EeGP77OehsCadw" name="setUserRole">
+      <ownedParameter xmi:id="_7dyP4FvHEeGadaQ3Sq1reQ" name="role" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7b3RYFvUEeGadaQ3Sq1reQ" name="login">
+      <ownedParameter xmi:id="_ANbi8FvVEeGadaQ3Sq1reQ" type="_Y4wI0Fu3EeGP77OehsCadw" direction="return"/>
+      <ownedParameter xmi:id="_DgoZEFvVEeGadaQ3Sq1reQ" name="username" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_F6elUFvVEeGadaQ3Sq1reQ" name="pass" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_JfxRAFvVEeGadaQ3Sq1reQ" name="role" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Ua6X0Fv0EeGFoNSZuYccew" name="newUser">
+      <ownedParameter xmi:id="_dOd4IFv0EeGFoNSZuYccew" name="username" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_u_seEFv0EeGFoNSZuYccew" name="role" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bH7XgFv2EeGFoNSZuYccew" name="editUser">
+      <ownedParameter xmi:id="_hgKr8Fv2EeGFoNSZuYccew" name="user" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_tB7e8Fv2EeGFoNSZuYccew" name="delUser">
+      <ownedParameter xmi:id="_z_NaIFv2EeGFoNSZuYccew" name="user" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_e6A-gFv1EeGFoNSZuYccew" name="newAdministrator">
+      <ownedParameter xmi:id="_suUb4Fv1EeGFoNSZuYccew" name="user" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_w8fsgFv1EeGFoNSZuYccew" name="pass" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_5gOBEFv1EeGFoNSZuYccew" name="role" type="_Y4wI0Fu3EeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_CELwwFv3EeGFoNSZuYccew" name=""/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_RxZSUFu8EeGP77OehsCadw" name="INotes"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_cR2ZUFu8EeGP77OehsCadw" name="ISpots" clientDependency="_eXWl4Fu_EeGP77OehsCadw">
+    <ownedAttribute xmi:id="_Dm_x4Fv4EeGFoNSZuYccew" name="idSpot" visibility="public" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_XGRtUFuxEeGP77OehsCadw" name="spot" visibility="public" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_ghJ24FuyEeGP77OehsCadw" name="latitude" visibility="public" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_vS0UYFuyEeGP77OehsCadw" name="longitude" visibility="public" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    <ownedOperation xmi:id="_1M5TEFvnEeGFoNSZuYccew" name="getIdSpot">
+      <ownedParameter xmi:id="_6BTdQFvnEeGFoNSZuYccew" type="_31fncFuvEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ku2b0FuxEeGP77OehsCadw" name="getSpot">
+      <ownedParameter xmi:id="_CBiIYFvWEeGadaQ3Sq1reQ" type="_97OPkFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9q2KEGC5EeGzKtM_IP53Zw" name="getLatitude">
+      <ownedParameter xmi:id="_FHx1sGC6EeGzKtM_IP53Zw" type="_fZBmoFuxEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_G3gt8GC6EeGzKtM_IP53Zw" name="getLongitude">
+      <ownedParameter xmi:id="_KC4dwGC6EeGzKtM_IP53Zw" type="_fZBmoFuxEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_JL1WcGC5EeGzKtM_IP53Zw" name="isInToSpot">
+      <ownedParameter xmi:id="_mzqFAGC7EeGzKtM_IP53Zw" type="_Y4wI0Fu3EeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4N8AAGC6EeGzKtM_IP53Zw" name="registerSpot"/>
+    <ownedOperation xmi:id="_G0tmsGC8EeGzKtM_IP53Zw" name="feedbackRegSpot"/>
+    <ownedOperation xmi:id="_5DulQWDKEeGfdNEKnq0Naw" name="calcRegSpot">
+      <ownedParameter xmi:id="_Z3NpcGDLEeGfdNEKnq0Naw" type="_31fncFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_jMHnUFu9EeGP77OehsCadw" name="ITours">
+    <ownedAttribute xmi:id="_KtVa4FvWEeGadaQ3Sq1reQ" name="tourid" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_meUX4Fu9EeGP77OehsCadw" name="datetime" type="_YelJkGB-EeGR0YSNSuzdmA" isUnique="false"/>
+    <ownedOperation xmi:id="_YUcw0FvWEeGadaQ3Sq1reQ" name="getIdTour">
+      <ownedParameter xmi:id="_fUByEFvWEeGadaQ3Sq1reQ" type="_31fncFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_gT7I0FvWEeGadaQ3Sq1reQ" name="setIdTour">
+      <ownedParameter xmi:id="_niH04FvWEeGadaQ3Sq1reQ" name="idtour" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_t5d60Fu9EeGP77OehsCadw" name="getDateTime">
+      <ownedParameter xmi:id="_wsFLYFvIEeGadaQ3Sq1reQ" type="_YelJkGB-EeGR0YSNSuzdmA" direction="return"/>
+      <ownedParameter xmi:id="_UGTK0WC3EeGzKtM_IP53Zw" name="idtour" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_v6LOUFu9EeGP77OehsCadw" name="setDateTime">
+      <ownedParameter xmi:id="_1rz0wFvIEeGadaQ3Sq1reQ" name="datetime" type="_YelJkGB-EeGR0YSNSuzdmA" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_GiA2UGB-EeGR0YSNSuzdmA" name="newTour"/>
+    <ownedOperation xmi:id="_Ba0rsFvsEeGFoNSZuYccew" name="saveTour">
+      <ownedParameter xmi:id="_1fRhsGC3EeGzKtM_IP53Zw" name="tour" type="_zs3v8GC3EeGzKtM_IP53Zw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_55-XwGB9EeGR0YSNSuzdmA" name="interruptTour">
+      <ownedParameter xmi:id="_Cs4LcGC4EeGzKtM_IP53Zw" name="tour" type="_zs3v8GC3EeGzKtM_IP53Zw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4OIhAGB9EeGR0YSNSuzdmA" name="endTour">
+      <ownedParameter xmi:id="_JQQ_8GC4EeGzKtM_IP53Zw" name="tour" type="_zs3v8GC3EeGzKtM_IP53Zw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_5o9yYFu-EeGP77OehsCadw" name="IManageSpots" clientDependency="_6nG7wV7WEeG0Z8UgFiQGIA _wZfbwF7XEeG0Z8UgFiQGIA">
+    <elementImport xmi:id="_bg41MF7XEeG0Z8UgFiQGIA" alias="ISpots" importedElement="_cR2ZUFu8EeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_oCGFsFvnEeGFoNSZuYccew" name="idspot" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_R-RJUFu_EeGP77OehsCadw" name="spot" type="_97OPkFuvEeGP77OehsCadw"/>
+    <ownedOperation xmi:id="_wL-mcFuxEeGP77OehsCadw" name="setSpot">
+      <ownedParameter xmi:id="_Vp6_EFvoEeGFoNSZuYccew" name="spot" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_FhZr4FuyEeGP77OehsCadw" name="delSpot">
+      <ownedParameter xmi:id="_b0K60FvoEeGFoNSZuYccew" name="idspot" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_PMhGUFuyEeGP77OehsCadw" name="editSpot">
+      <ownedParameter xmi:id="_igoy0FvoEeGFoNSZuYccew" name="idspot" type="_31fncFuvEeGP77OehsCadw" isUnique="false" effect="read"/>
+      <ownedParameter xmi:id="_l_DacFvoEeGFoNSZuYccew" name="spot" type="_97OPkFuvEeGP77OehsCadw" isUnique="false" effect="update"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_TShSYFuyEeGP77OehsCadw" name="listSpot"/>
+    <ownedOperation xmi:id="_S1eIMFvtEeGFoNSZuYccew" name="saveSpot">
+      <ownedParameter xmi:id="_fZb_EFvtEeGFoNSZuYccew" name="spot" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_nRe5YFvtEeGFoNSZuYccew" name="latitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_pyKGYFvtEeGFoNSZuYccew" name="longitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_EznjYFuzEeGP77OehsCadw" name="setLatitude">
+      <ownedParameter xmi:id="_9GAu8FvoEeGFoNSZuYccew" name="latitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_IfHkwFuzEeGP77OehsCadw" name="setLongitude">
+      <ownedParameter xmi:id="_ExRKcFvpEeGFoNSZuYccew" name="longitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_eXWl4Fu_EeGP77OehsCadw" name="ISpots" supplier="_5o9yYFu-EeGP77OehsCadw" client="_cR2ZUFu8EeGP77OehsCadw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_kB6U8Fu_EeGP77OehsCadw" name="iSpots_iManageSpots_0" memberEnd="_kB6U9Fu_EeGP77OehsCadw _kB6U8Vu_EeGP77OehsCadw">
+    <ownedEnd xmi:id="_kB6U8Vu_EeGP77OehsCadw" name="iManageSpots" type="_5o9yYFu-EeGP77OehsCadw" association="_kB6U8Fu_EeGP77OehsCadw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kB6U8lu_EeGP77OehsCadw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kB6U81u_EeGP77OehsCadw"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_kB6U9Fu_EeGP77OehsCadw" name="iSpots" type="_cR2ZUFu8EeGP77OehsCadw" aggregation="shared" association="_kB6U8Fu_EeGP77OehsCadw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kB6U9Vu_EeGP77OehsCadw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kB6U9lu_EeGP77OehsCadw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_UPoaEFviEeGFoNSZuYccew" name="ManageSpots" clientDependency="_B1vUQWBZEeGR0YSNSuzdmA">
+    <generalization xmi:id="_o5h8oFvqEeGFoNSZuYccew" general="_5o9yYFu-EeGP77OehsCadw"/>
+    <generalization xmi:id="_qCIjcFvqEeGFoNSZuYccew" general="_cR2ZUFu8EeGP77OehsCadw"/>
+    <generalization xmi:id="_mWW_0FvrEeGFoNSZuYccew" general="_cR2ZUFu8EeGP77OehsCadw"/>
+    <generalization xmi:id="_esN5cFv9EeGFoNSZuYccew" general="_cR2ZUFu8EeGP77OehsCadw"/>
+    <generalization xmi:id="_q00C8Fv9EeGFoNSZuYccew" general="_cR2ZUFu8EeGP77OehsCadw"/>
+    <generalization xmi:id="_0e90EFv9EeGFoNSZuYccew" general="_5o9yYFu-EeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_bzAE4FviEeGFoNSZuYccew" name="spot" visibility="private" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_nH0oEFviEeGFoNSZuYccew" name="latitude" visibility="private" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_rHkbIFviEeGFoNSZuYccew" name="longitude" visibility="private" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    <interfaceRealization xmi:id="_B1vUQWBZEeGR0YSNSuzdmA" name="InterfaceRealization0" supplier="_5o9yYFu-EeGP77OehsCadw" client="_UPoaEFviEeGFoNSZuYccew" contract="_5o9yYFu-EeGP77OehsCadw"/>
+    <ownedOperation xmi:id="_hYXtwFvpEeGFoNSZuYccew" name="getIdSpot">
+      <ownedParameter xmi:id="_pEEOIFvpEeGFoNSZuYccew" type="_31fncFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_y519QFvlEeGFoNSZuYccew" name="getSpot">
+      <ownedParameter xmi:id="__G6XEFvlEeGFoNSZuYccew" type="_97OPkFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_KDCGYFvmEeGFoNSZuYccew" name="setSpot">
+      <ownedParameter xmi:id="_TeKkEFvmEeGFoNSZuYccew" name="spott" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_L6h-EFvnEeGFoNSZuYccew" name="delSpot">
+      <ownedParameter xmi:id="_aUoQIFvnEeGFoNSZuYccew" name="idspot" type="_31fncFuvEeGP77OehsCadw" isUnique="false" effect="delete"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_9abDQFvpEeGFoNSZuYccew" name="editSpot">
+      <ownedParameter xmi:id="_DiAFgFvqEeGFoNSZuYccew" name="idspot" type="_31fncFuvEeGP77OehsCadw" isUnique="false" effect="read"/>
+      <ownedParameter xmi:id="_HpLWQFvqEeGFoNSZuYccew" name="spot" type="_97OPkFuvEeGP77OehsCadw" isUnique="false" effect="update"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_SFUlAFvqEeGFoNSZuYccew" name="listSpot"/>
+    <ownedOperation xmi:id="__5l3kFvtEeGFoNSZuYccew" name="saveSpot">
+      <ownedParameter xmi:id="_I7bEcFvuEeGFoNSZuYccew" name="spot" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_MUCmEFvuEeGFoNSZuYccew" name="latitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+      <ownedParameter xmi:id="_QpzFYFvuEeGFoNSZuYccew" name="longitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Z76DkFvmEeGFoNSZuYccew" name="getLatitude">
+      <ownedParameter xmi:id="_i1Qp4FvmEeGFoNSZuYccew" type="_fZBmoFuxEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_j-wBgFvmEeGFoNSZuYccew" name="setLatitude">
+      <ownedParameter xmi:id="_plJpUFvmEeGFoNSZuYccew" name="latitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_sD48oFvmEeGFoNSZuYccew" name="getLongitude">
+      <ownedParameter xmi:id="_zFVmIFvmEeGFoNSZuYccew" type="_fZBmoFuxEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_0xov4FvmEeGFoNSZuYccew" name="setLongitude">
+      <ownedParameter xmi:id="_4ZlG8FvmEeGFoNSZuYccew" name="longitude" type="_fZBmoFuxEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_OU6bMFv6EeGFoNSZuYccew" name="INotes">
+    <ownedAttribute xmi:id="_TNxnkFv6EeGFoNSZuYccew" name="idNote" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_cKN2YFuzEeGP77OehsCadw" name="note" visibility="public" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedOperation xmi:id="_ixE9YFv6EeGFoNSZuYccew" name="getIdNote">
+      <ownedParameter xmi:id="_uug_wFv6EeGFoNSZuYccew" name="" type="_31fncFuvEeGP77OehsCadw" direction="return" effect="create"/>
+      <ownedParameter xmi:id="_UKUWgGBnEeGR0YSNSuzdmA" name="idspot" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_kuYxUGBdEeGR0YSNSuzdmA" name="setIdNote"/>
+    <ownedOperation xmi:id="_jj1vUFuzEeGP77OehsCadw" name="setNote">
+      <ownedParameter xmi:id="_6-3CwFvIEeGadaQ3Sq1reQ" name="note" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_iDZ3UFuzEeGP77OehsCadw" name="getNote">
+      <ownedParameter xmi:id="_4Y8JYFvIEeGadaQ3Sq1reQ" type="_97OPkFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_7WNaUGB_EeGR0YSNSuzdmA" name="newNote"/>
+    <ownedOperation xmi:id="_JmQ_kGCAEeGR0YSNSuzdmA" name="saveNote"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_K_XUUFv9EeGFoNSZuYccew" name="Enumeration0">
+    <ownedLiteral xmi:id="_Q9tiEFv9EeGFoNSZuYccew" name="EnumerationLiteral0"/>
+    <ownedLiteral xmi:id="_TvftMFv9EeGFoNSZuYccew"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_6nG7wV7WEeG0Z8UgFiQGIA" name="&lt;&lt;uses>>" supplier="_cR2ZUFu8EeGP77OehsCadw" client="_5o9yYFu-EeGP77OehsCadw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_wZfbwF7XEeG0Z8UgFiQGIA" name="" supplier="_cR2ZUFu8EeGP77OehsCadw" client="_5o9yYFu-EeGP77OehsCadw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_e8SXMGBaEeGR0YSNSuzdmA" name="Notes" clientDependency="_GHpQgGBoEeGR0YSNSuzdmA _J9aoMGBoEeGR0YSNSuzdmA _Wezj0GB2EeGR0YSNSuzdmA">
+    <ownedAttribute xmi:id="_p-1pMGBbEeGR0YSNSuzdmA" name="idNote" visibility="private" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_vXhlIGBbEeGR0YSNSuzdmA" name="note" visibility="private" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <interfaceRealization xmi:id="_GHpQgGBoEeGR0YSNSuzdmA" name="InterfaceRealization0" supplier="_cR2ZUFu8EeGP77OehsCadw" client="_e8SXMGBaEeGR0YSNSuzdmA" contract="_cR2ZUFu8EeGP77OehsCadw"/>
+    <interfaceRealization xmi:id="_J9aoMGBoEeGR0YSNSuzdmA" name="InterfaceRealization1" supplier="_OU6bMFv6EeGFoNSZuYccew" client="_e8SXMGBaEeGR0YSNSuzdmA" contract="_OU6bMFv6EeGFoNSZuYccew"/>
+    <interfaceRealization xmi:id="_Wezj0GB2EeGR0YSNSuzdmA" name="InterfaceRealization2" supplier="_OU6bMFv6EeGFoNSZuYccew" client="_e8SXMGBaEeGR0YSNSuzdmA" contract="_OU6bMFv6EeGFoNSZuYccew"/>
+    <ownedOperation xmi:id="_NS5oMGBmEeGR0YSNSuzdmA" name="getIdNote">
+      <ownedParameter xmi:id="_Vje-UGBmEeGR0YSNSuzdmA" type="_31fncFuvEeGP77OehsCadw" direction="return" effect="read"/>
+      <ownedParameter xmi:id="_d4pScGBmEeGR0YSNSuzdmA" name="idspot" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_lyHToGBnEeGR0YSNSuzdmA" name="setIdNote"/>
+    <ownedOperation xmi:id="_okFsAGBnEeGR0YSNSuzdmA" name="setNote">
+      <ownedParameter xmi:id="_u1Nr0GBnEeGR0YSNSuzdmA" name="note" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_zKOkQGBnEeGR0YSNSuzdmA" name="getNote">
+      <ownedParameter xmi:id="_3yfI0GBnEeGR0YSNSuzdmA" type="_97OPkFuvEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_OJ1I0GBpEeGR0YSNSuzdmA" name="createNote"/>
+    <ownedOperation xmi:id="_SKBJUGCAEeGR0YSNSuzdmA" name="newNote"/>
+    <ownedOperation xmi:id="_T5-rEGCAEeGR0YSNSuzdmA" name="saveNote"/>
+    <ownedOperation xmi:id="_sc6OUGCAEeGR0YSNSuzdmA" name="searchNote">
+      <ownedParameter xmi:id="__u0L8GDEEeGzKtM_IP53Zw" name="spot" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gwNXoGB1EeGR0YSNSuzdmA" name="" memberEnd="_gwNXoWB1EeGR0YSNSuzdmA _gwLicGB1EeGR0YSNSuzdmA" navigableOwnedEnd="_gwLicGB1EeGR0YSNSuzdmA">
+    <ownedEnd xmi:id="_gwNXoWB1EeGR0YSNSuzdmA" name="tour" type="_vIuu0FuzEeGP77OehsCadw" association="_gwNXoGB1EeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gwNXomB1EeGR0YSNSuzdmA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gwNXo2B1EeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_gwLicGB1EeGR0YSNSuzdmA" name="note" type="_e8SXMGBaEeGR0YSNSuzdmA" association="_gwNXoGB1EeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gwLicWB1EeGR0YSNSuzdmA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gwLicmB1EeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-OSmQGB1EeGR0YSNSuzdmA" name="Spots" clientDependency="_GIk8QGB2EeGR0YSNSuzdmA">
+    <ownedAttribute xmi:id="_G6G7IGBbEeGR0YSNSuzdmA" name="idSpot" visibility="private" type="_31fncFuvEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_jVGVEGBbEeGR0YSNSuzdmA" name="spot" visibility="private" type="_97OPkFuvEeGP77OehsCadw" isUnique="false"/>
+    <ownedAttribute xmi:id="_tsWlsGC8EeGzKtM_IP53Zw" name="latitude" visibility="private" type="_fZBmoFuxEeGP77OehsCadw"/>
+    <ownedAttribute xmi:id="_zLUIwGC8EeGzKtM_IP53Zw" name="longitude" visibility="private" type="_fZBmoFuxEeGP77OehsCadw"/>
+    <interfaceRealization xmi:id="_GIk8QGB2EeGR0YSNSuzdmA" name="InterfaceRealization0" supplier="_cR2ZUFu8EeGP77OehsCadw" client="_-OSmQGB1EeGR0YSNSuzdmA" contract="_cR2ZUFu8EeGP77OehsCadw"/>
+    <ownedOperation xmi:id="_KCt1YGBcEeGR0YSNSuzdmA" name="getIdSpot">
+      <ownedParameter xmi:id="_bA3YkGBcEeGR0YSNSuzdmA" type="_31fncFuvEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_f98WkGBcEeGR0YSNSuzdmA" name="getSpot">
+      <ownedParameter xmi:id="_9euT4GBcEeGR0YSNSuzdmA" type="_97OPkFuvEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_RAAn8GC6EeGzKtM_IP53Zw" name="getLatitude">
+      <ownedParameter xmi:id="_V8mdwGC6EeGzKtM_IP53Zw" type="_fZBmoFuxEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_XBVRMGC6EeGzKtM_IP53Zw" name="getLongitude">
+      <ownedParameter xmi:id="_dP5sQGC6EeGzKtM_IP53Zw" type="_fZBmoFuxEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ggU7MGC6EeGzKtM_IP53Zw" name="isInToSpot">
+      <ownedParameter xmi:id="_1_2-4GC6EeGzKtM_IP53Zw" type="_Y4wI0Fu3EeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_UbASsGC7EeGzKtM_IP53Zw" name="registerSpot"/>
+    <ownedOperation xmi:id="_N1HuYGC8EeGzKtM_IP53Zw" name="feedbackRegSpot"/>
+    <ownedOperation xmi:id="_-uSj4FuyEeGP77OehsCadw" name="getLatitude">
+      <ownedParameter xmi:id="_02KYoFvoEeGFoNSZuYccew" type="_fZBmoFuxEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_G7MT4FuzEeGP77OehsCadw" name="getLongitude">
+      <ownedParameter xmi:id="_AnjjEFvpEeGFoNSZuYccew" type="_fZBmoFuxEeGP77OehsCadw" direction="return" effect="read"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_cqfCUGDLEeGfdNEKnq0Naw" name="calcRegSpot">
+      <ownedParameter xmi:id="_m0exIGDLEeGfdNEKnq0Naw" type="_31fncFuvEeGP77OehsCadw" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cpmSIGB2EeGR0YSNSuzdmA" name="notes_spots_0" memberEnd="_cpmSIWB2EeGR0YSNSuzdmA _cpkc8GB2EeGR0YSNSuzdmA">
+    <ownedEnd xmi:id="_cpmSIWB2EeGR0YSNSuzdmA" name="notes" type="_e8SXMGBaEeGR0YSNSuzdmA" aggregation="composite" association="_cpmSIGB2EeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cpmSImB2EeGR0YSNSuzdmA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cpmSI2B2EeGR0YSNSuzdmA"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_cpkc8GB2EeGR0YSNSuzdmA" name="spots" type="_-OSmQGB1EeGR0YSNSuzdmA" association="_cpmSIGB2EeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cpkc8WB2EeGR0YSNSuzdmA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cpkc8mB2EeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_YelJkGB-EeGR0YSNSuzdmA" name="DateTime"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QgkUsGB_EeGR0YSNSuzdmA" name="" memberEnd="_QgkUsWB_EeGR0YSNSuzdmA _QgifgGB_EeGR0YSNSuzdmA" navigableOwnedEnd="_QgifgGB_EeGR0YSNSuzdmA">
+    <ownedEnd xmi:id="_QgkUsWB_EeGR0YSNSuzdmA" name="tours" type="_vIuu0FuzEeGP77OehsCadw" association="_QgkUsGB_EeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QgkUsmB_EeGR0YSNSuzdmA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QgkUs2B_EeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_QgifgGB_EeGR0YSNSuzdmA" name="spots" type="_-OSmQGB1EeGR0YSNSuzdmA" association="_QgkUsGB_EeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QgifgWB_EeGR0YSNSuzdmA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QgifgmB_EeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_X8hokGCCEeGR0YSNSuzdmA" name="users_tours_0" memberEnd="_X8hokWCCEeGR0YSNSuzdmA _X8gacGCCEeGR0YSNSuzdmA" navigableOwnedEnd="_X8gacGCCEeGR0YSNSuzdmA">
+    <ownedEnd xmi:id="_X8hokWCCEeGR0YSNSuzdmA" name="users" type="_B-CA4Fu0EeGP77OehsCadw" association="_X8hokGCCEeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X8hokmCCEeGR0YSNSuzdmA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X8hok2CCEeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_X8gacGCCEeGR0YSNSuzdmA" name="tours" type="_vIuu0FuzEeGP77OehsCadw" association="_X8hokGCCEeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X8gacWCCEeGR0YSNSuzdmA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X8gacmCCEeGR0YSNSuzdmA"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_sfyRQGCCEeGR0YSNSuzdmA" name="administrators_manageSpots_0" memberEnd="_sfyRQWCCEeGR0YSNSuzdmA _sfxDIGCCEeGR0YSNSuzdmA" navigableOwnedEnd="_sfxDIGCCEeGR0YSNSuzdmA _sfyRQWCCEeGR0YSNSuzdmA">
+    <ownedEnd xmi:id="_sfyRQWCCEeGR0YSNSuzdmA" name="administrators" type="_OLd00Fu5EeGP77OehsCadw" association="_sfyRQGCCEeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sfyRQmCCEeGR0YSNSuzdmA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sfyRQ2CCEeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_sfxDIGCCEeGR0YSNSuzdmA" name="manageSpots" type="_UPoaEFviEeGFoNSZuYccew" association="_sfyRQGCCEeGR0YSNSuzdmA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sfxDIWCCEeGR0YSNSuzdmA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sfxDImCCEeGR0YSNSuzdmA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_zs3v8GC3EeGzKtM_IP53Zw" name="Tour"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_RWOHgGDFEeGzKtM_IP53Zw" name="ISearch">
+    <ownedOperation xmi:id="_obwtEGCAEeGR0YSNSuzdmA" name="sNote">
+      <ownedParameter xmi:id="_3BNioGDEEeGzKtM_IP53Zw" name="spotId" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bXuosGDFEeGzKtM_IP53Zw" name="sDataByDate">
+      <ownedParameter xmi:id="_ijS3gGDFEeGzKtM_IP53Zw" name="startDate" type="_YelJkGB-EeGR0YSNSuzdmA" isUnique="false"/>
+      <ownedParameter xmi:id="_mTtOEGDFEeGzKtM_IP53Zw" name="endDate" type="_YelJkGB-EeGR0YSNSuzdmA" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_4CaEcGDFEeGzKtM_IP53Zw" name="sDataBySpot">
+      <ownedParameter xmi:id="_CWqigGDGEeGzKtM_IP53Zw" name="spotId" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_8bb6MGDFEeGzKtM_IP53Zw" name="sDataByUser">
+      <ownedParameter xmi:id="_NHVPwGDGEeGzKtM_IP53Zw" name="userId" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_8O-WEGDGEeGzKtM_IP53Zw" name="Search" clientDependency="_q6VwEGDHEeGzKtM_IP53Zw">
+    <interfaceRealization xmi:id="_q6VwEGDHEeGzKtM_IP53Zw" name="InterfaceRealization0" supplier="_RWOHgGDFEeGzKtM_IP53Zw" client="_8O-WEGDGEeGzKtM_IP53Zw" contract="_RWOHgGDFEeGzKtM_IP53Zw"/>
+    <ownedOperation xmi:id="_Abgn8GDHEeGzKtM_IP53Zw" name="sNote">
+      <ownedParameter xmi:id="_LaA84GDHEeGzKtM_IP53Zw" name="spotId" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_B3TQgGDHEeGzKtM_IP53Zw" name="sDataByDate">
+      <ownedParameter xmi:id="_TNv-8GDHEeGzKtM_IP53Zw" name="startDate" type="_YelJkGB-EeGR0YSNSuzdmA" isUnique="false"/>
+      <ownedParameter xmi:id="_cR0AcGDHEeGzKtM_IP53Zw" name="endDate" type="_YelJkGB-EeGR0YSNSuzdmA" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_DikfgGDHEeGzKtM_IP53Zw" name="sDataBySpot">
+      <ownedParameter xmi:id="_g0XloGDHEeGzKtM_IP53Zw" name="spotId" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_FJXeMGDHEeGzKtM_IP53Zw" name="sDataByUser">
+      <ownedParameter xmi:id="_kgn08GDHEeGzKtM_IP53Zw" name="userId" type="_31fncFuvEeGP77OehsCadw" isUnique="false"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_HfMT0GDMEeGfdNEKnq0Naw" name="IData">
+    <ownedOperation xmi:id="_K_ZEIGDMEeGfdNEKnq0Naw" name="saveData"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9XUPcGDMEeGfdNEKnq0Naw" name="Data" clientDependency="_D0KXEGDNEeGfdNEKnq0Naw">
+    <interfaceRealization xmi:id="_D0KXEGDNEeGfdNEKnq0Naw" name="InterfaceRealization0" supplier="_HfMT0GDMEeGfdNEKnq0Naw" client="_9XUPcGDMEeGfdNEKnq0Naw" contract="_HfMT0GDMEeGfdNEKnq0Naw"/>
+    <ownedOperation xmi:id="_A_G1gGDNEeGfdNEKnq0Naw" name="saveData"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_oaASkGDNEeGfdNEKnq0Naw" name="IAdmData">
+    <ownedOperation xmi:id="_q8UeUGDNEeGfdNEKnq0Naw" name="exportData"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ubxnwGDNEeGfdNEKnq0Naw" name="AdmData" clientDependency="_23hsEGDNEeGfdNEKnq0Naw">
+    <interfaceRealization xmi:id="_23hsEGDNEeGfdNEKnq0Naw" name="InterfaceRealization0" supplier="_oaASkGDNEeGfdNEKnq0Naw" client="_ubxnwGDNEeGfdNEKnq0Naw" contract="_oaASkGDNEeGfdNEKnq0Naw"/>
+    <ownedOperation xmi:id="_z6vK0GDNEeGfdNEKnq0Naw" name="exportData"/>
+  </packagedElement>
+</uml:Model>

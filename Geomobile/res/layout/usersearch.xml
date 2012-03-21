@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/itsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/itsearch"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <LinearLayout
+        android:id="@+id/adminsearchoptions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itsearch"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/tvspots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:paddingLeft="5dp"
+            android:text="@string/tvspots"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Spinner
+            android:id="@+id/spspots"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adminsearchoptions1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/adminsearchoptions"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+
+        <TextView
+            android:id="@+id/tvstartdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:paddingLeft="5dp"
+            android:text="@string/tvstartdate"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tvenddate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:paddingRight="5dp"
+            android:text="@string/tvenddate"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adminsearchoptions2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/adminsearchoptions1"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+
+        <EditText
+            android:id="@+id/etstartdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:inputType="date" >
+
+            <requestFocus />
+        </EditText>
+        
+        <EditText
+            android:id="@+id/etenddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:inputType="date" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/adminsearchoptions2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="15dp" >
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+        	android:paddingRight="5dp" >
+
+	        <TextView
+	            android:id="@+id/ttspot"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="50"
+	            android:text="@string/ttspots"
+	            android:textAppearance="?android:attr/textAppearanceMedium" />
+	        
+	    	<TextView
+	    	    android:id="@+id/ttuser"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="50"
+	    	    android:text="@string/ttusers"
+	    	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    	<TextView
+	    	    android:id="@+id/ttdatetime"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="50"
+	    	    android:text="@string/ttdatetime"
+	    	    android:textAppearance="?android:attr/textAppearanceMedium" />
+    	
+	    	<TextView
+	    	    android:id="@+id/ttnotes"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="50"
+	    	    android:text="@string/ttnotes"
+	    	    android:textAppearance="?android:attr/textAppearanceMedium" />
+    	
+    	</TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+    			    	
+        </TableRow>
+        
+		<ListView
+		    android:id="@+id/listView1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="231dp"
+		    android:layout_marginLeft="5dp"
+		    android:layout_marginRight="2dp"
+		    android:layout_marginTop="0dp"
+		    android:isScrollContainer="true" >
+
+		</ListView>
+        
+    </TableLayout>
+        
+</RelativeLayout>

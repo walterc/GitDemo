@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!-- TÍTULO DA APLICAÇÃO -->
+    <string name="app_name">Geomobile</string>
+    
+    <!-- BOTÕES DA APLICAÇÃO -->
+    <string name="btmanagespots">Manage Spots</string>
+    <string name="btsearch">Search</string>
+    <string name="btexportdata">Export Data</string>
+    <string name="btoptions">Options</string>
+    <string name="btquit">Quit</string>   
+	<string name="btdelete">Delete</string>
+	<string name="btall">All</string>
+	<string name="btselected">Selected</string>
+	<string name="btbyselection">By Selection</string>
+    <string name="btok">OK</string>
+	<string name="btsave">Save</string>
+	<string name="btverifycardspace">Verify Card Space</string>
+	<string name="btchgstloc">Change the Storage Location</string>
+	<string name="btdeldata">Delete Data</string>
+    <string name="btcancel">Cancel</string>
+    <string name="btnotes">Notes</string>
+	<string name="btstarttour">Start Tour</string>
+	<string name="btendtour">End Tour</string>
+	<string name="btinterrupttour">Interrupt Tour</string>
+	<string name="btjustify">Justify</string>
+	<string name="btcontinuetour">Continue Tour</string>
+	<string name="bthome">Home</string>	
+    				
+	<!-- LABELS DA APLICAÇÃO (TextView) -->
+    <string name="tvspot">Spot:</string>    
+    <string name="tvspots">Spots:</string>    
+    <string name="tvusers">Users:</string>
+	<string name="tvstartdate">Start Date:</string>
+	<string name="tvenddate">End Date:</string>
+	<string name="tvwait">Wait...</string>
+	<string name="tvmecnumber">MEC Number:</string>
+    <string name="tvpassword">Password:</string>
+    <string name="tvobs">Comment:</string>
+    <string name="tvdescription">Description:</string>
+    <string name="tvlongitude">Longitude:</string>
+    <string name="tvlatitude">Latitude:</string>
+    <string name="tvprogress">Progress:</string>
+	<string name="tvtype">Type:</string>
+	<string name="tvcause">Cause:</string>
+				
+	<!-- CABEÇALHOS DAS LISTAS (DataGridView) -->
+    <string name="dgspots">Spots</string> 	
+	<string name="dgusers">Users</string>
+    <string name="dgdatetime">Date/Time</string>
+	<string name="dgnotes">Notes</string>
+	
+	<!-- TEXTO DAS OPÇÕES (RadioButton) -->
+    <string name="rbmemcard">Memory Card</string>
+    <string name="rbphonememory">Phone Memory</string>
+    						
+	<!-- TÍTULOS DAS INTERFACES -->
+	<string name="itlogin">LOGIN</string>
+	<string name="iteditnotes">EDIT NOTE</string>
+	<string name="itinsertnotes">INSERT NOTE</string>
+	<string name="itmanagenotes">MANAGE NOTES</string>
+	<string name="itoptions">OPTIONS</string>
+	<string name="itmanagespots">MANAGE SPOTS</string>
+	<string name="iteditspot">EDIT SPOT</string>
+	<string name="itnewspotreg">NEW SPOT REGISTRATION</string>
+	<string name="itsotragetype">STORAGE TYPE</string>
+	<string name="ittour">TOUR</string>
+	<string name="itendtour">END TOUR</string>
+	<string name="itinterrupttour">TOUR INTERRUPTION</string>
+	<string name="itsearch">SEARCH</string>
+	<string name="itdeletedata">DELETE DATA</string>
+	<string name="itexportdata">EXPORT DATA</string>
+	<string name="itinsertspots">INSERT SPOT</string>
+	
+	<!-- TITULOS COLUNAS -->
+	<string name="ttdatetime">Date/Time</string>
+	<string name="ttnotes">Notes</string>
+	<string name="ttspots">Spots</string>
+	<string name="ttusers">Users</string>
+	
+	<!-- CORES -->	
+	<color name="Cinza_6">#0F0F0F</color>
+	<color name="Cinza_25">#404040</color>
+
+	<!-- OUTROS -->
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+	<string name="completed">Completed</string>    	
+	<string name="adminarea">Admin Area</string>
+		
+    <!-- MENSAGENS DE ERRO -->    
+	<string name="msgnotendtour">There are spots for checking!</string>
+
+    	
+</resources>

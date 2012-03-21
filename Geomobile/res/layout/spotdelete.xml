@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="50dp" >
+
+    <TextView
+        android:id="@+id/tvManagesSpots"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/btmanagespots"
+        android:textSize="25sp"
+        android:textStyle="bold" 
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btDelete"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/btdelete"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btCancel"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/btcancel"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lvSpots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="122dp" >
+    </ListView>
+
+</RelativeLayout>
